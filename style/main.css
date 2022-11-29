@@ -164,7 +164,7 @@ a {
 
 .main-product {
   top: 12rem;
-  left: 2.5rem;
+  left: 4rem;
 }
 
 .main-number {
@@ -174,12 +174,12 @@ a {
 
 .main-asdffdsa {
   top: 13rem;
-  right: 2.5rem;
+  right: 4rem;
 }
 
 .main-aboutus {
   top: 20rem;
-  right: 3.5rem;
+  right: 2.5rem;
 }
 
 .main-link {
@@ -208,11 +208,11 @@ a {
 }
 
 .main-product:hover .product-underbar {
-  transform: translateX(13.5rem);
+  transform: translateX(11rem);
 }
 
 .main-number:hover .number-underbar {
-  transform: translateX(8.5rem);
+  transform: translateX(8.2rem);
 }
 
 .asdffdsa-underbar,
@@ -221,11 +221,11 @@ a {
 }
 
 .main-asdffdsa:hover .asdffdsa-underbar {
-  transform: translateX(-10.5rem);
+  transform: translateX(-10.3rem);
 }
 
 .main-aboutus:hover .aboutus-underbar {
-  transform: translateX(-10.7rem);
+  transform: translateX(-10.5rem);
 }
 
 
@@ -244,6 +244,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   justify-content: center;
+  column-gap: 5rem;
 }
 
 .infoContainer {
@@ -318,7 +319,7 @@ li {
 
 /* ========== Break Points ========== */
 /* For small devices */
-@media screen and (max-width: 340px) {
+/*@media screen and (max-width: 340px) {
   .main-product {
     top: 11rem;
     left: 1rem;
@@ -343,14 +344,14 @@ li {
     grid-template-columns: repeat(1, max-content);
     justify-content: center;
   }
-}
+}*/
 
 
 
 
 
 /* For medium devices */
-@media screen and (max-width: 576px) {
+/*@media screen and (max-width: 576px) {
   .main-product:hover .product-underbar {
     transform: translateX(11rem);
   }
@@ -558,7 +559,7 @@ li {
   }
 
 }
-
+*/
 
 
 
