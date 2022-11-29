@@ -319,7 +319,7 @@ li {
 
 /* ========== Break Points ========== */
 /* For small devices */
-/*@media screen and (max-width: 340px) {
+@media screen and (max-width: 340px) {
   .main-product {
     top: 11rem;
     left: 1rem;
@@ -344,14 +344,14 @@ li {
     grid-template-columns: repeat(1, max-content);
     justify-content: center;
   }
-}*/
+}
 
 
 
 
 
 /* For medium devices */
-/*@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .main-product:hover .product-underbar {
     transform: translateX(11rem);
   }
@@ -559,7 +559,7 @@ li {
   }
 
 }
-*/
+
 
 
 
