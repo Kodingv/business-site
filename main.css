@@ -1,0 +1,763 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Black+Han+Sans&family=Do+Hyeon&family=Jua&family=Lobster&family=Permanent+Marker&family=Rubik+Glitch&display=swap');
+
+
+
+/* ========== Variables Css ========== */
+:root {
+
+  /* ----- Font ----- */
+  --head-font: 'Rubik Glitch', cursive;
+  --main-font: 'Aboreto', cursive;
+  --korean-font: 'Do Hyeon', sans-serif;
+
+  /* ----- Font Size ----- */
+  --head-size: 2.5rem;
+
+
+  /* ----- Color ----- */
+  --nav-hover: rgb(187, 187, 187);
+}
+
+
+
+
+
+
+
+
+
+
+/* Base Setting */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: black;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* ========== Header Nav ========== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 100;
+}
+
+.nav {
+  position: relative;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nav .navName {
+  font-family: var(--head-font);
+  color: black;
+  font-size: var(--head-size);
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+/*.navClose,
+.navToggle {
+  display: inline-flex;
+}*/
+
+.navToggle {
+  color: black;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .navMenu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    padding-block: 3.5rem 3rem;
+    border-radius: 0 0 2rem 2rem;
+    transition: top .4s;
+  }
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1.5rem;
+}
+
+.navLink {
+  color: white;
+  font-family: var(--main-font);
+  font-weight: 550;
+  font-size: 1.2rem;
+  transition: color .4s;
+}
+
+.navLink:hover {
+  color: var(--nav-hover);
+}
+
+.navClose {
+  position: absolute;
+  color: white;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+/* Show Menu */
+.showMenu {
+  top: 0;
+}
+
+/* Change Background Header */
+.bg-header {
+  background-color: white;
+}
+
+
+
+
+
+/* ========== Main ========== */
+.backgroundImg {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-item {
+  position: absolute;
+}
+
+.main-product {
+  top: 12rem;
+  left: 2.5rem;
+}
+
+.main-number {
+  top: 19rem;
+  left: 3rem;
+}
+
+.main-asdffdsa {
+  top: 13rem;
+  right: 2.5rem;
+}
+
+.main-aboutus {
+  top: 20rem;
+  right: 3.5rem;
+}
+
+.main-link {
+  color: black;
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color .3s;
+}
+
+.main-link:hover {
+  color:rgb(187, 187, 187);
+}
+
+.underbar {
+  position: absolute;
+  border-bottom: 1px solid rgb(71, 71, 71);
+  width: 20rem;
+  top: 1.5rem;
+  transition: transform .3s;
+}
+
+.product-underbar,
+.number-underbar {
+  left: -25rem;
+}
+
+.main-product:hover .product-underbar {
+  transform: translateX(13.5rem);
+}
+
+.main-number:hover .number-underbar {
+  transform: translateX(8.5rem);
+}
+
+.asdffdsa-underbar,
+.aboutus-underbar {
+  right: -25rem;
+}
+
+.main-asdffdsa:hover .asdffdsa-underbar {
+  transform: translateX(-10.5rem);
+}
+
+.main-aboutus:hover .aboutus-underbar {
+  transform: translateX(-10.7rem);
+}
+
+
+
+
+
+
+
+/* ========== Footer ========== */
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+}
+
+.infoContainer {
+  font-family: var(--korean-font);
+}
+
+.infoContainer h4 {
+  padding-top: 10px;
+}
+
+.infoContainer ul,
+li {
+  padding-top: 5px;
+}
+
+.infoContainer li {
+  font-size: .8rem;
+}
+
+.infoContainer a {
+  color: black;
+  cursor: pointer;
+}
+
+
+.socialmediaContainer {
+  display: flex;
+  column-gap: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem; 
+}
+
+.socialmediaLink {
+  font-size: 1.4rem;
+  color: black;
+  cursor: pointer;
+  transition: transform .4s;
+}
+
+.socialmediaLink:hover {
+  transform: translateY(-.25rem);
+}
+
+
+
+
+
+
+
+/* ========== scrollBar ========== */
+::-webkit-scrollbar {
+  width: .4rem;
+  border-radius: .5rem;
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: rgb(71, 71, 71);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+/* ========== Break Points ========== */
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .main-product {
+    top: 11rem;
+    left: 1rem;
+  }
+
+  .main-number {
+    top: 17rem;
+  }
+
+  .main-asdffdsa {
+    top: 9rem;
+    right: 1rem;
+  }
+
+  .main-aboutus {
+    top: 15rem;
+    right: 1.5rem;
+  }
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: repeat(1, max-content);
+    justify-content: center;
+  }
+}
+
+
+
+
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+  .main-product:hover .product-underbar {
+    transform: translateX(11rem);
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  main {
+    display: grid;
+  }
+  
+  main .backgroundImg {
+    width: 80%;
+    justify-self: center;
+  }
+
+  .main-product {
+    left: 5rem;
+  }
+
+  .main-product:hover .product-underbar {
+    transform: translateX(11rem);
+  }
+
+  .main-number {
+    left: 6rem;
+  }
+
+  .number-underbar {
+    left: -27rem;
+  }
+
+  .main-number:hover .number-underbar {
+    transform: translateX(10.5rem);
+  }
+
+  .main-asdffdsa {
+    right: 6rem;
+  }
+
+  .asdffdsa-underbar {
+    right: -27rem;
+  }
+
+  .main-asdffdsa:hover .asdffdsa-underbar {
+    transform: translateX(-12.5rem);
+  }
+
+  .footerContainer {
+    column-gap: 10rem;
+  }
+}
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width: 900px) {
+
+  .navClose,
+  .navToggle {
+    display: none;
+  }
+
+  .navList {
+    flex-direction: row;
+    column-gap: 2.5rem;
+    padding-right: .5rem;
+  }
+
+  .navLink {
+    color: black;
+  }
+
+  main {
+    display: grid;
+  }
+
+  .backgroundImg {
+    width: 70%;
+    justify-self: center;
+  }
+
+  .product-underbar,
+  .number-underbar {
+    left: -28rem;
+  }
+
+  .main-product {
+    left: 6rem;
+  }
+
+  .main-product:hover .product-underbar {
+    transform: translateX(14rem);
+  }
+
+  .main-number {
+    left: 6.5rem;
+  }
+
+  .main-number:hover .number-underbar {
+    transform: translateX(11.3rem);
+  }
+
+  .asdffdsa-underbar,
+  .aboutus-underbar {
+    right: -28rem;
+  }
+  
+  .main-asdffdsa {
+    right: 6rem;
+  }
+
+  .main-asdffdsa:hover .asdffdsa-underbar {
+    transform: translateX(-13.5rem);
+  }
+
+  .main-aboutus {
+    right: 5rem;
+  }
+
+  .main-aboutus:hover .aboutus-underbar {
+    transform: translateX(-13.7rem);
+  }
+
+  .footerContainer {
+    column-gap: 12rem;
+  }
+}
+
+
+
+
+@media screen and (min-width: 901px) and (max-width: 1023px) {
+
+  .navClose,
+  .navToggle {
+    display: none;
+  }
+
+  .navList {
+    flex-direction: row;
+    column-gap: 4rem;
+    padding-right: 1rem;
+  }
+
+  .navLink {
+    color: black;
+  }
+
+  main {
+    display: grid;
+  }
+
+  .backgroundImg {
+    width: 80%;
+    justify-self: center;
+  }
+
+  .product-underbar,
+  .number-underbar {
+    left: -28rem;
+  }
+
+  .main-product {
+    left: 7rem;
+  }
+
+  .main-product:hover .product-underbar {
+    transform: translateX(14.3rem);
+  }
+
+  .main-number {
+    left: 8rem;
+  }
+
+  .main-number:hover .number-underbar {
+    transform: translateX(11.3rem);
+  }
+
+  .asdffdsa-underbar,
+  .aboutus-underbar {
+    right: -27rem;
+  }
+  
+  .main-asdffdsa {
+    right: 7rem;
+  }
+
+  .main-asdffdsa:hover .asdffdsa-underbar {
+    transform: translateX(-12.5rem);
+  }
+
+  .main-aboutus {
+    right: 5.5rem;
+  }
+
+  .main-aboutus:hover .aboutus-underbar {
+    transform: translateX(-12.8rem);
+  }
+
+  .footerContainer {
+    display: flex;
+    column-gap: 4rem;
+  }
+
+}
+
+
+
+
+
+
+/* For large devices */
+@media screen and (min-width: 1024px) and (max-width: 1247px) {
+
+  .navClose,
+  .navToggle {
+    display: none;
+  }
+
+  .navList {
+    flex-direction: row;
+    column-gap: 4rem;
+    padding-right: 1rem;
+  }
+
+  .navList li a {
+    color: black;
+  }
+
+  main {
+    display: grid;
+  }
+
+  main .backgroundImg {
+    width: 80%;
+    justify-self: center;
+  }
+
+  .product-underbar,
+  .number-underbar {
+    left: -30rem;
+  }
+
+  .main-product {
+    left: 9rem;
+  }
+
+  .main-product:hover .product-underbar {
+    transform: translateX(16.3rem);
+  }
+
+  .main-number {
+    top: 21rem;
+    left: 9.5rem;
+  }
+
+  .main-number:hover .number-underbar {
+    transform: translateX(13.5rem);
+  }
+
+  .asdffdsa-underbar,
+  .aboutus-underbar {
+    right: -30rem;
+  }
+
+  .main-asdffdsa {
+    right: 9.5rem;
+  }
+
+  .main-asdffdsa:hover .asdffdsa-underbar {
+    transform: translateX(-15.5rem);
+  }
+
+  .main-aboutus {
+    top: 23rem;
+    right: 8rem;
+  }
+
+  .main-aboutus:hover .aboutus-underbar {
+    transform: translate(-15.7rem);
+  }
+
+  .underbar {
+    top: 1.5rem;
+  }
+
+  .footerContainer {
+    display: flex;
+    column-gap: 4rem;
+  }
+}
+
+
+
+@media screen and (min-width: 1248px) {
+  
+  .navClose,
+  .navToggle {
+    display: none;
+  }
+
+  .navList {
+    flex-direction: row;
+    column-gap: 4rem;
+    padding-right: 3rem;
+  }
+
+  .navList li a {
+    color: black;
+  }
+
+  main {
+    display: grid;
+  }
+
+  main .backgroundImg {
+    width: 50%;
+    justify-self: center;
+  }
+
+  .underbar {
+    width: 35rem;
+  }
+
+  .product-underbar,
+  .number-underbar {
+    left: -60rem;
+  }
+
+  .main-product {
+    left: 17rem;
+  }
+
+  .main-product:hover .product-underbar {
+    transform: translateX(31.3rem);
+  }
+
+  .main-number {
+    top: 21rem;
+    left: 18rem;
+  }
+
+  .main-number:hover .number-underbar {
+    transform: translateX(28.5rem);
+  }
+
+  .asdffdsa-underbar,
+  .aboutus-underbar {
+    right: -60rem;
+  }
+
+  .main-asdffdsa {
+    right: 17rem;
+  }
+
+  .main-asdffdsa:hover .asdffdsa-underbar {
+    transform: translateX(-30.5rem);
+  }
+
+  .main-aboutus {
+    top: 23rem;
+    right: 15.5rem;
+  }
+
+  .main-aboutus:hover .aboutus-underbar {
+    transform: translate(-30.7rem);
+  }
+
+  .underbar {
+    top: 1.5rem;
+  }
+
+  .footerContainer {
+    display: flex;
+    column-gap: 4rem;
+  }
+}
+
+@media screen and (min-width:1550px) {
+  
+  
+  .main-product {
+    left: 24rem;
+  }
+
+  .main-number {
+    left: 25rem;
+  }
+
+  .main-asdffdsa {
+    right: 25rem;
+  }
+
+  .main-aboutus {
+    right: 23.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
