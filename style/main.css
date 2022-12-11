@@ -40,7 +40,7 @@ html {
 
 body {
   color: black;
-  overflow-x: hidden;
+  
 }
 
 ul {
@@ -153,9 +153,16 @@ a {
 
 
 /* ========== Main ========== */
+.main-container {
+  position: relative;
+  overflow-x: hidden;
+  display: grid;
+}
+
 .backgroundImg {
   width: 100%;
   height: 100vh;
+  justify-self: center;
 }
 
 .main-item {
@@ -164,12 +171,12 @@ a {
 
 .main-product {
   top: 12rem;
-  left: 4rem;
+  left: 5rem;
 }
 
 .main-number {
   top: 19rem;
-  left: 3rem;
+  left: 4rem;
 }
 
 .main-asdffdsa {
@@ -196,7 +203,7 @@ a {
 
 .underbar {
   position: absolute;
-  border-bottom: 1px solid rgb(71, 71, 71);
+  border-bottom: 2px solid rgb(88, 88, 88);
   width: 20rem;
   top: 1.5rem;
   transition: transform .3s;
@@ -317,100 +324,36 @@ li {
 
 
 
-/* ========== Break Points ========== */
-/* For small devices */
-@media screen and (max-width: 340px) {
+
+
+
+
+
+
+/* ========== Break Points 2 ========== */
+/* For Small device */
+@media screen and (max-width: 440px) {
   .main-product {
-    top: 11rem;
-    left: 1rem;
+    left: 3rem;
   }
 
   .main-number {
-    top: 17rem;
+    left: 2.5rem;
   }
 
   .main-asdffdsa {
-    top: 9rem;
-    right: 1rem;
+    right: 3rem;
   }
 
   .main-aboutus {
-    top: 15rem;
-    right: 1.5rem;
-  }
-
-  .footerContainer {
-    display: grid;
-    grid-template-columns: repeat(1, max-content);
-    justify-content: center;
+    right: 2rem;
   }
 }
 
 
 
-
-
-/* For medium devices */
-@media screen and (max-width: 576px) {
-  .main-product:hover .product-underbar {
-    transform: translateX(11rem);
-  }
-}
-
-
-@media screen and (max-width: 767px) {
-  main {
-    display: grid;
-  }
-  
-  main .backgroundImg {
-    width: 80%;
-    justify-self: center;
-  }
-
-  .main-product {
-    left: 5rem;
-  }
-
-  .main-product:hover .product-underbar {
-    transform: translateX(11rem);
-  }
-
-  .main-number {
-    left: 6rem;
-  }
-
-  .number-underbar {
-    left: -27rem;
-  }
-
-  .main-number:hover .number-underbar {
-    transform: translateX(10.5rem);
-  }
-
-  .main-asdffdsa {
-    right: 6rem;
-  }
-
-  .asdffdsa-underbar {
-    right: -27rem;
-  }
-
-  .main-asdffdsa:hover .asdffdsa-underbar {
-    transform: translateX(-12.5rem);
-  }
-
-  .footerContainer {
-    column-gap: 10rem;
-  }
-}
-
-
-
-
-
-@media screen and (min-width:768px) and (max-width: 900px) {
-
+/* For Medium device */
+@media screen and (min-width: 768px) and (max-width: 901px) {
   .navClose,
   .navToggle {
     display: none;
@@ -418,69 +361,16 @@ li {
 
   .navList {
     flex-direction: row;
-    column-gap: 2.5rem;
-    padding-right: .5rem;
+    column-gap: 4rem;
+    padding-right: 1rem;
   }
 
   .navLink {
     color: black;
   }
-
-  main {
-    display: grid;
-  }
-
-  .backgroundImg {
-    width: 70%;
-    justify-self: center;
-  }
-
-  .product-underbar,
-  .number-underbar {
-    left: -28rem;
-  }
-
-  .main-product {
-    left: 6rem;
-  }
-
-  .main-product:hover .product-underbar {
-    transform: translateX(14rem);
-  }
-
-  .main-number {
-    left: 6.5rem;
-  }
-
-  .main-number:hover .number-underbar {
-    transform: translateX(11.3rem);
-  }
-
-  .asdffdsa-underbar,
-  .aboutus-underbar {
-    right: -28rem;
-  }
-  
-  .main-asdffdsa {
-    right: 6rem;
-  }
-
-  .main-asdffdsa:hover .asdffdsa-underbar {
-    transform: translateX(-13.5rem);
-  }
-
-  .main-aboutus {
-    right: 5rem;
-  }
-
-  .main-aboutus:hover .aboutus-underbar {
-    transform: translateX(-13.7rem);
-  }
-
-  .footerContainer {
-    column-gap: 12rem;
-  }
 }
+
+
 
 
 
@@ -500,10 +390,6 @@ li {
 
   .navLink {
     color: black;
-  }
-
-  main {
-    display: grid;
   }
 
   .backgroundImg {
@@ -583,10 +469,6 @@ li {
     color: black;
   }
 
-  main {
-    display: grid;
-  }
-
   main .backgroundImg {
     width: 80%;
     justify-self: center;
@@ -663,10 +545,6 @@ li {
 
   .navList li a {
     color: black;
-  }
-
-  main {
-    display: grid;
   }
 
   main .backgroundImg {
